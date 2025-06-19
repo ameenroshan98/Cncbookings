@@ -7,90 +7,104 @@
          Replace 'favicon.ico' with the actual path to your icon file. -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Google Fonts import for a modern and clean typeface (Roboto) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts import for Montserrat (Attractive Font) and Roboto (for fallback/body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         /* Basic CSS Reset and Body Styling */
         body {
-            margin: 0; /* Remove default body margin */
-            padding: 0; /* Remove default body padding */
-            font-family: 'Roboto', sans-serif; /* Apply Roboto font */
-            background-color: #f0f2f5; /* Light grey background for the page */
-            color: #333; /* Default text color */
-            display: flex; /* Use flexbox for centering content */
-            justify-content: center; /* Center content horizontally */
-            align-items: center; /* Center content vertically */
-            min-height: 100vh; /* Ensure body takes at least full viewport height */
-            text-align: center; /* Center text within the body */
-            line-height: 1.6; /* Improve readability with line spacing */
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif; /* Default body font */
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: column; /* Arrange items vertically */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            line-height: 1.6;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the top "Cncbookings" title */
+        .site-title {
+            font-family: 'Montserrat', sans-serif; /* Attractive font for the main site title */
+            font-size: 3.5em; /* Larger size */
+            color: #039BE5; /* Matching Google Blue */
+            margin-bottom: 20px; /* Space below the title */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            font-weight: 700;
         }
 
         /* Main Container Styling for the content box */
         .container {
-            background-color: #ffffff; /* White background for the content box */
-            padding: 40px; /* Internal spacing within the box */
-            border-radius: 12px; /* Rounded corners for a softer look */
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-            max-width: 500px; /* Maximum width for better readability on large screens */
-            width: 90%; /* Responsive width, takes 90% of parent width */
-            box-sizing: border-box; /* Ensures padding is included in the 90% width */
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 90%;
+            box-sizing: border-box;
         }
 
         /* Styling for Headings */
         h1 {
-            color: #2c3e50; /* Dark blue-grey for prominent headings */
-            font-size: 2.2em; /* Larger font size for main heading */
-            margin-bottom: 15px; /* Space below the heading */
-            font-weight: 700; /* Bold font weight */
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif; /* Keep body font or choose another for headings */
         }
 
         /* Styling for Paragraphs */
         p {
-            font-size: 1.1em; /* Slightly larger font size for body text */
-            color: #555; /* Medium grey for paragraph text */
-            margin-bottom: 30px; /* Space below paragraphs */
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            font-family: 'Roboto', sans-serif; /* Keep body font */
         }
 
         /* Specific styling for the new introductory paragraph */
         .intro-paragraph {
-            margin-top: 10px; /* Add some space above this paragraph */
-            margin-bottom: 30px; /* Add some space below this paragraph */
-            font-size: 1.0em; /* Slightly smaller font for secondary info */
-            color: #666; /* A bit lighter color for secondary text */
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 1.0em;
+            color: #666;
         }
-
 
         /* Container for multiple buttons */
         .button-group {
             display: flex;
-            flex-direction: column; /* Stack buttons vertically */
-            gap: 15px; /* Space between buttons */
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 30px;
         }
 
         /* Specific Styling for the Google Calendar button (to ensure consistent look) */
-        /* !important is used here to potentially override Google's inline styles if necessary,
-           though Google's script largely controls the button's appearance. */
         .gc-scheduling-button {
-            font-size: 1.2em !important; /* Larger font size for the button text */
-            padding: 15px 30px !important; /* More padding for a larger click area */
-            border-radius: 8px !important; /* Rounded corners for the button */
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effects */
-            width: 100%; /* Make buttons take full width of their container */
-            box-sizing: border-box; /* Include padding in width */
+            font-size: 1.2em !important;
+            padding: 15px 30px !important;
+            border-radius: 8px !important;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         /* Hover effect for the Google Calendar button */
         .gc-scheduling-button:hover {
-            transform: translateY(-2px); /* Lifts the button slightly on hover */
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Adds a more pronounced shadow on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
         }
 
     </style>
 </head>
 <body>
+    <!-- New div for the main site title "Cncbookings" -->
+    <div class="site-title">
+        Cncbookings
+    </div>
 
     <div class="container">
         <h1>Welcome CNC Members!</h1>
@@ -108,9 +122,9 @@
               var target = document.currentScript;
               window.addEventListener('load', function() {
                 calendar.schedulingButton.load({
-                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JCwJNC4c8tLtVT68LxD5BhvuKwTMHkZkgOoHC8Fw4funbfoii6MNLre8V-KEAKHp9s9zZQAgh?gv=true', /* Updated URL */
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JCwJNC4c8tLtVT68LxD5BhvuKwTMHkZkgOoHC8Fw4funbfoii6MNLre8V-KEAKHp9s9zZQAgh?gv=true',
                   color: '#039BE5', /* Google Blue */
-                  label: 'Book Conference Room (6+ Attendees)', /* Reverted label */
+                  label: 'Book Conference Room (6+ Attendees)',
                   target,
                 });
               });
@@ -125,9 +139,9 @@
               var target = document.currentScript;
               window.addEventListener('load', function() {
                 calendar.schedulingButton.load({
-                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ32KEM4_0v-kbkSR1hj93VqH18-gPpaTkzqOR_Jgo-YVYHVrN4c8Z5uVAc3cqxvMpRl5YLs2_X_?gv=true', /* UPDATED URL */
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ32KEM4_0v-kbkSR1hj93VqH18-gPpaTkzqOR_Jgo-YVYHVrN4c8Z5uVAc3cqxvMpRl5YLs2_X_?gv=true',
                   color: '#F4B400', /* Google Yellow for contrast */
-                  label: 'Book a Zoom Meeting', /* Updated label */
+                  label: 'Book a Zoom Meeting',
                   target,
                 });
               });
@@ -142,9 +156,9 @@
               var target = document.currentScript;
               window.addEventListener('load', function() {
                 calendar.schedulingButton.load({
-                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2meAb8q3yZwCVgedCVWfH8_IreX8mhqpmunWNUW4r6kIio-PPkssqv1ZR5cO8nuLJea3_fa9-o?gv=true', /* UPDATED URL */
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2meAb8q3yZwCVgedCVWfH8_IreX8mhqpmunWNUW4r6kIio-PPkssqv1ZR5cO8nuLJea3_fa9-o?gv=true',
                   color: '#34A853', /* Google Green for contrast */
-                  label: 'Book Boardroom(Fewer Attendees)', /* Updated label */
+                  label: 'Book Boardroom(Fewer Attendees)',
                   target,
                 });
               });
