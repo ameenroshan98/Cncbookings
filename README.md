@@ -146,7 +146,7 @@
                 calendar.schedulingButton.load({
                   url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2meAb8q3yZwCVgedCVWfH8_IreX8mhqpmunWNUW4r6kIio-PPkssqv1ZR5cO8nuLJea3_fa9-o?gv=true',
                   color: '#34A853', /* Google Green for contrast */
-                  label: 'Book Boardroom(Fewer Attendees)',
+                  label: 'Book Meeting Room (Fewer Attendees)', /* Changed from Boardroom */
                   target,
                 });
               });
