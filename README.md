@@ -7,8 +7,8 @@
          Replace 'favicon.ico' with the actual path to your icon file. -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Google Fonts import for Montserrat (Attractive Font) and Roboto (for fallback/body) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts import for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         /* Basic CSS Reset and Body Styling */
@@ -26,16 +26,6 @@
             text-align: center;
             line-height: 1.6;
             box-sizing: border-box;
-        }
-
-        /* Styling for the top "Cncbookings" title */
-        .site-title {
-            font-family: 'Montserrat', sans-serif; /* Attractive font for the main site title */
-            font-size: 3.5em; /* Larger size */
-            color: #039BE5; /* Matching Google Blue */
-            margin-bottom: 20px; /* Space below the title */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-            font-weight: 700;
         }
 
         /* Main Container Styling for the content box */
@@ -101,10 +91,8 @@
     </style>
 </head>
 <body>
-    <!-- New div for the main site title "Cncbookings" -->
-    <div class="site-title">
-        Cncbookings
-    </div>
+    <!-- The "Cncbookings" text previously appeared implicitly as plain text,
+         not as a styled <div> with a specific font. -->
 
     <div class="container">
         <h1>Welcome CNC Members!</h1>
