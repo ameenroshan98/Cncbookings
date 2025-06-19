@@ -97,7 +97,7 @@
     <div class="container">
         <h1>Welcome CNC Members!</h1>
         <p class="intro-paragraph">
-            This platform is designed to help you quickly and efficiently book meeting rooms that suit your session size and purpose. Whether it’s for a small team huddle or a large group discussion.
+            This platform is designed to help you quickly and efficiently book meetings that suit your session size and purpose. Whether it’s for a small team huddle or a large group discussion.
         </p>
         <p>Please choose the type of meeting room you would like to book, based on your meeting needs:</p>
 
