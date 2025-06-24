@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -104,7 +103,7 @@
         <p class="intro-paragraph">
             This platform is designed to help you quickly and efficiently book meetings that suit your session size and purpose. Whether it’s for a small team huddle or a large group discussion.
         </p>
-        <p>Please choose the type of meeting room you would like to book, based on your meeting needs:</p>
+        <p>Please choose the type of meeting you would like to book, based on your meeting needs:</p>
 
         <div class="button-group">
             <!-- Google Calendar Appointment Scheduling button for Conference Room (Minimum 6 attendees) -->
