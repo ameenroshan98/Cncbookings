@@ -53,7 +53,7 @@
   <div class="container">
     <h1>Welcome CNC Members!</h1>
     <p class="intro-paragraph">
-      Quickly book the right type of meeting for your team—whether it’s a small huddle or a large discussion.
+      Quickly book the right type of meeting for your team-whether it’s a small huddle or a large discussion.
     </p>
     <div class="button-group">
       <div id="conf-btn"></div>
