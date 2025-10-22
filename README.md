@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -47,29 +48,49 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     }
+    @media (max-width: 480px) {
+      .container { padding: 25px; }
+      h1 { font-size: 1.8em; }
+      .gc-scheduling-button { font-size: 1em !important; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Welcome CNC Members!</h1>
     <p class="intro-paragraph">
-      Quickly book the right type of meeting for your team-whether it’s a small huddle or a large discussion.
+      Quickly book the right type of meeting for your team — whether it’s a small huddle or a large discussion.
     </p>
     <div class="button-group">
       <div id="conf-btn"></div>
+      <div id="smallroom-btn"></div>
       <div id="zoom-btn"></div>
     </div>
     <p style="margin-top:30px; font-size:0.9em; color:#777;">Hope you have a great meeting experience!</p>
   </div>
-  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+  <!-- Google Calendar script -->
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" defer></script>
+
   <script>
     window.addEventListener('load', function() {
+      // Book Conference Room (6+ Attendees)
       calendar.schedulingButton.load({
         url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1JCwJNC4c8tLtVT68LxD5BhvuKwTMHkZkgOoHC8Fw4funbfoii6MNLre8V-KEAKHp9s9zZQAgh?gv=true',
         color: '#039BE5',
         label: 'Book Conference Room (6+ Attendees)',
         target: document.getElementById('conf-btn'),
       });
+
+      // Book Meeting Room (Fewer Attendees)
+      calendar.schedulingButton.load({
+        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2meAb8q3yZwCVgedCVWfH8_IreX8mhqpmunWNUW4r6kIio-PPkssqv1ZR5cO8nuLJea3_fa9-o?gv=true',
+        color: '#34A853',
+        label: 'Book Meeting Room (Fewer Attendees)',
+        target: document.getElementById('smallroom-btn'),
+      });
+
+      // Book a Zoom Meeting
       calendar.schedulingButton.load({
         url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ32KEM4_0v-kbkSR1hj93VqH18-gPpaTkzqOR_Jgo-YVYHVrN4c8Z5uVAc3cqxvMpRl5YLs2_X_?gv=true',
         color: '#F4B400',
