@@ -1,4 +1,22 @@
-<html lang="en">
+<!-- Cloodot Webchat Widget -->
+ <script>
+     (function() {
+       const script = document.createElement('script');
+       script.src = 'https://staging.webchat.cloodot.com/embed-script.js';
+       script.onload = function() {
+         // Initialize webchat after script loads
+         const webchat = CloodotWebchat.init({ 
+           channelId: "cmh7rlfx000tmy7fkw2dgvkje", 
+           position: "bottom-right", 
+           companyName: "Care n Cure",
+           greeting: 'Welcome! How can we help you today?',
+           placeholder: 'Type your message here...',
+           webchatBaseUrl: "https://staging.webchat.cloodot.com"
+         }); 
+       };
+       document.head.appendChild(script);
+     })();
+     </script><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
